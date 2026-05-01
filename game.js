@@ -6,7 +6,14 @@ class StartScene extends Phaser.Scene {
   create() {
     this.cameras.main.setBackgroundColor("#dbeafe");
 
-    this.add.text(210, 180, "Memory Match Game", {
+   this.add.text(this.cameras.main.centerX, 180, "Memory Match Game", {
+  fontSize: "42px",
+  fill: "#000"
+}).setOrigin(0.5);
+    this.add.text(this.cameras.main.centerX, 230, "Click cards to find matching pairs", {
+  fontSize: "22px",
+  fill: "#000"
+}).setOrigin(0.5);
       fontSize: "42px",
       fill: "#000"
     });
